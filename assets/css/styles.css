@@ -4,6 +4,31 @@ body, h1, h2, p {
   padding: 0;
 }
 
+:root {
+  --Blue-600: #4492E0;
+  --Blue-600-WCAG: #3479BE;
+  --Blue-600-light: #CDDFF0;
+
+  --Orange-600: #E26D35;
+  --Orange-600-WCAG: #C15623;
+  --Orange-600-light: #F3D1C1;
+
+  --Pear: #EAF3B2;
+  --Beige: #F2EBE3;
+
+  --Neutral-1000: #000000;
+  --Neutral-900: #1F1F1F;
+  --Neutral-800: #4D4D4D;
+  --Neutral-700: #757575;
+  --Neutral-600: #999999;
+  --Neutral-500: #C2C2C2;
+  --Neutral-400: #D4D4D4;
+  --Neutral-300: #E0E0E0;
+  --Neutral-200: #EDEDED;
+  --Neutral-100: #FFFFFF;
+}
+
+
 /* Basic styling */
 body {
   font-family: Arial, sans-serif;
@@ -13,7 +38,6 @@ body {
 
 header {
   color: #ffffff;
-  padding: 10px;
 }
 
 nav ul {
@@ -30,13 +54,8 @@ nav ul li a {
   text-decoration: none;
 }
 
-main {
-  padding: 20px;
-}
-
 footer {
   color: #ffffff;
   text-align: center;
-  padding: 10px;
   width: 100%;
 }
