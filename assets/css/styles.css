@@ -159,7 +159,7 @@ footer {
   background-color: var(--Beige);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -186,4 +186,15 @@ footer {
 
 .card-content-text h3 {
   margin-block: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-inline: 100px;
+  padding-block: 40px;
+  justify-content: center;
+  gap: 30px;
 }
