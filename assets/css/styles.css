@@ -1,35 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+
 /* Reset some default styles */
-body, h1, h2, p {
+body,
+h1,
+h2,
+p {
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --Blue-600: #4492E0;
-  --Blue-600-WCAG: #3479BE;
-  --Blue-600-light: #CDDFF0;
+  --Blue-600: #4492e0;
+  --Blue-600-WCAG: #3479be;
+  --Blue-600-light: #cddff0;
 
-  --Orange-600: #E26D35;
-  --Orange-600-WCAG: #C15623;
-  --Orange-600-light: #F3D1C1;
+  --Orange-600: #e26d35;
+  --Orange-600-WCAG: #c15623;
+  --Orange-600-light: #f3d1c1;
 
-  --Pear: #EAF3B2;
-  --Beige: #F2EBE3;
+  --Pear: #eaf3b2;
+  --Beige: #f2ebe3;
 
   --Neutral-1000: #000000;
-  --Neutral-900: #1F1F1F;
-  --Neutral-800: #4D4D4D;
+  --Neutral-900: #1f1f1f;
+  --Neutral-800: #4d4d4d;
   --Neutral-700: #757575;
   --Neutral-600: #999999;
-  --Neutral-500: #C2C2C2;
-  --Neutral-400: #D4D4D4;
-  --Neutral-300: #E0E0E0;
-  --Neutral-200: #EDEDED;
-  --Neutral-100: #FFFFFF;
+  --Neutral-500: #c2c2c2;
+  --Neutral-400: #d4d4d4;
+  --Neutral-300: #e0e0e0;
+  --Neutral-200: #ededed;
+  --Neutral-100: #ffffff;
 }
 
-
 /* Basic styling */
+
+h1 {
+  font-family: "Chewy";
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
@@ -38,6 +47,7 @@ body {
 
 header {
   color: #ffffff;
+  flex-direction: column;
 }
 
 nav ul {
@@ -47,6 +57,16 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 10px;
+  font-size: 14px;
+  color: var(--Neutral-900);
+}
+
+nav ul button {
+  background-color: var(--Blue-600);
+  border-style: none;
+  padding-inline: 12px;
+  padding-block: 8px;
+  color: var(--Neutral-100);
 }
 
 nav ul li a {
@@ -58,4 +78,8 @@ footer {
   color: #ffffff;
   text-align: center;
   width: 100%;
+}
+
+nav {
+  flex-direction: column;
 }
