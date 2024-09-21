@@ -67,6 +67,8 @@ nav ul button {
   padding-inline: 12px;
   padding-block: 8px;
   color: var(--Neutral-100);
+  border-radius: 8px;
+  font-weight: 500;
 }
 
 nav ul li a {
@@ -74,12 +76,32 @@ nav ul li a {
   text-decoration: none;
 }
 
-footer {
-  color: #ffffff;
-  text-align: center;
-  width: 100%;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-inline: 100px;
+  align-items: center;
 }
 
-nav {
-  flex-direction: column;
+/* footer */
+
+footer {
+  background-color: var(--Orange-600-light);
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-inline: 100px;
+  align-items: top;
 }
