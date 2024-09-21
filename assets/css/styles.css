@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-/* Reset some default styles */
+/* Reset some default styles and other stuff*/
 body,
 h1,
 h2,
@@ -59,7 +59,8 @@ h4,
 h5,
 h6,
 li,
-button {
+button,
+span {
   font-family: "Quicksand", sans-serif;
 }
 
@@ -109,6 +110,9 @@ nav {
   align-items: center;
 }
 
+ul {
+  list-style-type: none;
+}
 /* footer */
 
 footer {
@@ -154,7 +158,7 @@ footer {
   padding-block: 28px;
 }
 
-/* dog card */
+/* dog card stylingf*/
 
 .card {
   background-color: var(--Beige);
@@ -228,4 +232,162 @@ footer {
   height: 50px;
   font-size: 20px;
   font-weight: 700;
+}
+
+.dog-hero {
+  max-width: 1220px;
+  display: flex;
+  gap: 8px;
+  max-height: 500px;
+  margin: 0 auto;
+  padding-inline: 100px;
+  margin-block: 20px;
+}
+
+.dog-hero-left-imgaes {
+  flex: 2;
+  display: flex;
+}
+
+.dog-hero-right-imgaes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.dog-hero-left-imgaes img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.dog-hero-right-imgaes img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.dog-hero-right-imgaes img:nth-last-of-type(2) {
+  border-radius: 0px 10px 0px 0px;
+}
+
+.dog-hero-right-imgaes img:nth-last-of-type(1) {
+  border-radius: 0px 0px 10px 0px;
+}
+
+.dog-metadata ul {
+  padding: 0;
+}
+.dog-metadata li {
+  padding-block: 8px;
+}
+
+.dog-description p {
+  padding-block: 8px;
+}
+.dog-description {
+  padding-block: 8px;
+}
+
+.lucky-content-container {
+  display: flex;
+  max-width: 1220px;
+  padding-inline: 100px;
+  margin: 0 auto;
+  gap: 150px;
+}
+
+.dog-info {
+  flex: 2;
+}
+.dog-info {
+  font-weight: 500;
+}
+
+.booking-calender {
+  flex: 1;
+}
+
+hr {
+  opacity: 50%;
+}
+
+.lucky-tags {
+  display: flex;
+  gap: 15px;
+}
+
+.lucky-tags span {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--Neutral-400);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* booking kalender */
+.calendar-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  max-height: 450px;
+}
+
+.calendar-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.Months {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 10px;
+  color: #757575;
+}
+
+.days-of-week div {
+  padding: 5px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.calender-booker {
+  margin-top: 20px;
+  background-color: var(--Blue-600);
+  color: var(--Neutral-100);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 24px;
+  width: 100%;
+  font-weight: bold;
 }
