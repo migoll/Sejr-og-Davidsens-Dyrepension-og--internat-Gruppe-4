@@ -26,14 +26,17 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="./assets/icons/dog-logo.svg" alt="" />
+          <a href="./index.html">
+            <img src="./assets/icons/dog-logo.svg" alt="" />
+          </a>
         </div>
         <div class="navbar">
           <ul>
-            <li>Adoption</li>
-            <li>Pensionsophold</li>
-            <li>Træning</li>
-            <button>Sign Up</button>
+            <li><a href="./dyre-oversigt.html">Adoption</a></li>
+            <li><a href="#">Pensionsophold</a></li>
+            <li><a href="#">Træning</a></li>
+            <li><a href="./tips-og-tricks.html">Tips & Tricks</a></li>
+            <button><a href="#">Sign Up</a></button>
           </ul>
         </div>
       </nav>
@@ -64,7 +67,7 @@
         <button class="filter-button">Filtrer</button>
       </div>
       <div class="dog-card-container">
-        <div class="card">
+        <div class="card" onclick="location.href='./adoptiv-dyr.html'">
           <img
             src="./assets/images/dogs/lucky-dog.jpg"
             alt="Billede af hunden Lucky"

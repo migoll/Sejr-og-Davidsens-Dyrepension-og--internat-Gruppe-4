@@ -27,14 +27,17 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="./assets/icons/dog-logo.svg" alt="" />
+          <a href="./index.html">
+            <img src="./assets/icons/dog-logo.svg" alt="" />
+          </a>
         </div>
         <div class="navbar">
           <ul>
-            <li>Adoption</li>
-            <li>Pensionsophold</li>
-            <li>Træning</li>
-            <button>Sign Up</button>
+            <li><a href="./dyre-oversigt.html">Adoption</a></li>
+            <li><a href="#">Pensionsophold</a></li>
+            <li><a href="#">Træning</a></li>
+            <li><a href="./tips-og-tricks.html">Tips & Tricks</a></li>
+            <button><a href="#">Sign Up</a></button>
           </ul>
         </div>
       </nav>
@@ -66,7 +69,12 @@
             Sejr og Davidsens <br />
             Dyrepension og -internat
           </h1>
-          <button class="index-hero-button">Se vores hunde</button>
+          <button
+            class="index-hero-button"
+            onclick="location.href='./adoptiv-dyr.html'"
+          >
+            Se vores hunde
+          </button>
         </div>
       </div>
       <div class="local-nav-container">
@@ -83,7 +91,7 @@
               alt=""
             />Træning</a
           >
-          <a href="#"
+          <a href="./tips-og-tricks.html"
             ><img src="./assets/icons/noun-pet-toy-6440874.svg" alt="" />Tips &
             tricks</a
           >
@@ -111,7 +119,7 @@
         <h2>Adopter en ven</h2>
       </div>
       <div class="dog-card-container">
-        <div class="card">
+        <div class="card" onclick="location.href='./adoptiv-dyr.html'">
           <img
             src="./assets/images/dogs/lucky-dog.jpg"
             alt="Billede af hunden Lucky"
@@ -211,7 +219,10 @@
               </p>
             </div>
 
-            <div class="tips-card card">
+            <div
+              class="tips-card card"
+              onclick="location.href='./specifikt-tip.html'"
+            >
               <img
                 src="./assets/images/tips-and-tricks/lydighedstræning.png"
                 alt=""
