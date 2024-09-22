@@ -66,6 +66,10 @@ span {
   font-family: "Quicksand", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 p {
   line-height: 1.5;
 }
@@ -106,8 +110,13 @@ nav ul button {
   cursor: pointer;
 }
 
+button a {
+  text-decoration: none;
+  color: unset;
+}
+
 nav ul li a {
-  color: #fff;
+  color: var(--Neutral-900);
   text-decoration: none;
 }
 
