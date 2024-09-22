@@ -19,3 +19,12 @@ accordionButton.forEach((button) => {
     }
   });
 });
+
+//Trejde parts kode www.w3schools.com/howto/howto_js_popup_chat.asp //
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
