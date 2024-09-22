@@ -69,9 +69,12 @@ body {
   color: #000000;
 }
 
+/* header styling */
+
 header {
   color: #ffffff;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 nav ul {
@@ -83,6 +86,7 @@ nav ul li {
   margin-right: 10px;
   font-size: 14px;
   color: var(--Neutral-900);
+  cursor: pointer;
 }
 
 nav ul button {
@@ -93,6 +97,7 @@ nav ul button {
   color: var(--Neutral-100);
   border-radius: 8px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 nav ul li a {
@@ -108,6 +113,10 @@ nav {
   margin: 0 auto;
   padding-inline: 100px;
   align-items: center;
+}
+
+nav img {
+  cursor: pointer;
 }
 
 ul {
@@ -165,6 +174,7 @@ footer {
   border-radius: 8px;
   width: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card img {
@@ -199,7 +209,7 @@ footer {
   font-weight: 600;
 }
 
-.card-container {
+.dog-card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 1220px;
@@ -232,6 +242,7 @@ footer {
   height: 50px;
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .dog-hero {
@@ -328,6 +339,7 @@ hr {
   border: 1px solid var(--Neutral-400);
   font-weight: 600;
   font-size: 16px;
+  cursor: pointer;
 }
 
 /* booking kalender */
@@ -390,4 +402,52 @@ hr {
   font-size: 24px;
   width: 100%;
   font-weight: bold;
+  cursor: pointer;
+}
+
+/* styling tips og tricks */
+
+.tips-card {
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.tips-card:hover {
+  background-color: var(--Neutral-200);
+  border-radius: 8px;
+}
+.tips-card img {
+  border-radius: 8px;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+.tips-card h4 {
+  margin-block: 8px 8px;
+}
+
+.tips-tags {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: var(--Neutral-800);
+}
+
+.se-flere {
+  font-weight: 600;
+  cursor: pointer;
+  text-align: end;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1220px;
+  padding-inline: 100px;
+  margin: 0 auto;
+}
+
+.lignende-hunde {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-inline: 100px;
+}
+.lignende-hunde h4 {
+  margin-bottom: 0px;
 }
