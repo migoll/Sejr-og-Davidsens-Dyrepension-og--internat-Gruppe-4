@@ -64,6 +64,10 @@ span {
   font-family: "Quicksand", sans-serif;
 }
 
+p {
+  line-height: 1.5;
+}
+
 body {
   background-color: #ffffff;
   color: #000000;
@@ -209,7 +213,8 @@ footer {
   font-weight: 600;
 }
 
-.dog-card-container {
+.dog-card-container,
+.tips-og-tricks-contianer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 1220px;
@@ -326,12 +331,12 @@ hr {
   opacity: 50%;
 }
 
-.lucky-tags {
+.meta-tags {
   display: flex;
   gap: 15px;
 }
 
-.lucky-tags span {
+.meta-tags span {
   flex: 1;
   text-align: center;
   padding: 10px;
@@ -419,10 +424,11 @@ hr {
 .tips-card img {
   border-radius: 8px;
   height: auto;
-  aspect-ratio: 1/1;
+  aspect-ratio: 5/4;
+  object-position: 20%;
 }
 .tips-card h4 {
-  margin-block: 8px 8px;
+  margin-block: 4px 5px;
 }
 
 .tips-tags {
@@ -450,4 +456,47 @@ hr {
 }
 .lignende-hunde h4 {
   margin-bottom: 0px;
+}
+
+/* specifik træning styling */
+
+.traener-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.traener-title h4 {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+  color: var(--Neutral-800);
+}
+
+.traening-content-container {
+  max-width: 1220px;
+  padding-inline: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  padding-block: 64px;
+}
+
+.traening-info-indhold p {
+  padding-block: 8px;
+  font-weight: 500;
+}
+
+.traening-info {
+  flex-grow: 1;
+}
+
+.lydighedstraening-image {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.traening-tag span {
+  max-width: 150px;
 }
