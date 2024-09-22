@@ -392,10 +392,6 @@ hr {
   font-weight: bold;
 }
 /* Index siden */
-.main-container {
-  margin: auto;
-  max-width: 1220px;
-}
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -410,6 +406,7 @@ hr {
   padding-left: 48px;
   margin: auto;
   max-width: 1220px;
+  padding-inline: 100px;
 }
 .container-btn {
   display: flex;
@@ -438,10 +435,12 @@ hr {
   margin: auto;
   max-width: 1220px;
   .btn-nav {
-    padding: 0;
-    margin: 24px 0 47px 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-inline: unset;
+    gap: 8px;
+    margin-block: 20px;
   }
   a {
     display: flex;
