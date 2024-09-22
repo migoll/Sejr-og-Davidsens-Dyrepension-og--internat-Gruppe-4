@@ -31,6 +31,26 @@
       </nav>
     </header>
     <main>
+      <img
+        class="open-button"
+        src="./assets/icons/chat-popup-icon.svg"
+        alt="chat pop up icon"
+        onclick="openForm()"
+      />
+
+      <div class="chat-popup" id="myForm">
+        <form class="form-container">
+          <h1>Chat</h1>
+
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
       <div class="title-section">
         <h2>Adoptivdyr</h2>
         <button class="filter-button">Filtrer</button>
