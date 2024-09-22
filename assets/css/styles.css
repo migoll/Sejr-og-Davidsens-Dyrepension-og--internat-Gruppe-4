@@ -512,27 +512,25 @@ hr {
   background-position: center;
   background-size: cover;
   border-radius: 12px;
-  padding-left: 48px;
   margin: auto;
   max-width: 1220px;
-  padding-inline: 100px;
+  margin-top: 24px;
 }
-.container-btn {
-  display: flex;
-  min-height: 52px;
-  max-width: 254px;
+
+.hero-content {
+  padding-inline: 56px;
+}
+
+.index-hero-button {
+  color: white;
   background-color: #000000;
-  border-radius: 14px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .btn {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    font-family: "Quicksand", sans-serif;
-    font-weight: bold;
-  }
+  border-radius: 8px;
+  padding-inline: 37px;
+  width: 254px;
+  height: 52px;
+  border-style: none;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .hero-text {
@@ -569,13 +567,17 @@ hr {
     height: 42.06px;
   }
 }
-/*
-#bgcolor-container {
-  top: 0%;
-  left: 0%;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
+
+.index-nyheder {
   background-color: var(--Orange-600-light);
+  padding-block: 16px;
+  margin-block: 32px;
 }
-*/
+
+.index-h3 h3 {
+  margin-block: 24px 0px;
+}
+
+.index-title-section {
+  padding-block: 0px;
+}
