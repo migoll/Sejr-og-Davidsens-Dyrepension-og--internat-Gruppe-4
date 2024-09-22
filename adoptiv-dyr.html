@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Det her er Lucky, Border Collie mix på 2.5 år. En idærdig og energisk hund der vil være god til en aktiv ejer.  "
+    />
+    <meta
+      name="keywords"
+      content="Lucky, Border Collie mix, hundeadoption, aktiv hund, energisk hund, ihærdig hund"
+    />
     <title>Lucky | Sejr og Davidsens</title>
     <script src="./assets/app.js" defer></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -31,6 +39,26 @@
       </nav>
     </header>
     <main>
+      <img
+        class="open-button"
+        src="./assets/icons/chat-popup-icon.svg"
+        alt="chat pop up icon"
+        onclick="openForm()"
+      />
+
+      <div class="chat-popup" id="myForm">
+        <form class="form-container">
+          <h1>Chat</h1>
+
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
       <div class="title-section">
         <h2>Lucky - en ihærdig og energisk hund</h2>
       </div>
